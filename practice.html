@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        height: 100vh;
+        background: violet;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: sans-serif;
+      }
+
+      .wrapper {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .profile-pic {
+        position: absolute;
+        top: -50px;
+        z-index: 1;
+      }
+
+      .profile-pic img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 5px solid white;
+        object-fit: cover;
+      }
+
+      .container {
+        margin-top: 60px;
+        display: flex;
+        background-color: white;
+        justify-content: center;
+        width: 600px;
+        height: 600px;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      .card {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        padding-top: 60px;
+      }
+
+      .info {
+        text-align: center;
+      }
+
+      .info > p {
+        line-height: 4px;
+      }
+
+      .stats {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+      }
+
+      .stats > div {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="profile-pic">
+        <img src="./profile.jpg" alt="Profile Picture" />
+      </div>
+
+      <div class="container">
+        <div class="card">
+          <div class="info">
+            <h1 style="color: red; margin-bottom: 4px">Harshavardhan</h1>
+            <p>Front-end Developer from <strong>India</strong></p>
+            <p><img src="./geo-alt.svg" alt="location" /> Chennai, India</p>
+          </div>
+          <div class="stats">
+            <div>
+              1598 <br />
+              Followers
+            </div>
+            <div>
+              65 <br />
+              Following
+            </div>
+            <div>
+              123 <br />
+              Articles
+            </div>
+            <div>
+              85 <br />
+              Works
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

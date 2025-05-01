@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .body,.body2,.body3,.body4 {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        height: 100vh;
+        background:linear-gradient(90deg, #fc466b 0%, #3f5efb 100%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: cursive;
+        position: relative;
+        flex-direction: row;
+        
+      }
+      
+      .image{
+        padding: 30px;
+        position: absolute;
+        top: 8px;
+      }
+      .image img {
+        object-fit: contain;
+        border-radius: 50%;
+        border:5px solid linear-gradient(90deg, #ffc3a0 0%, #ffafbd 100%);
+        box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.3);
+
+      }
+      .container {
+        display: flex;
+        background-color: white;
+        width: 600px;
+        height: 600px;
+        border-radius: 8px;
+        margin-top: 100px;
+        border:5px solid linear-gradient(90deg, #ffc3a0 0%, #ffafbd 100%);
+        box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.3);
+
+        
+      }
+      .card {
+        display: flex;
+        padding-top: 100px;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+      }
+
+      .info {
+        text-align: center;
+      }
+      .info > p {
+        line-height: 4px;
+      }
+      .stats,
+      .social {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+      }
+      .stats ul,
+      .social ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 40px;
+        list-style-type: none;
+        padding-left: 0px;
+
+      }
+      .stats ul {
+        gap: 60px;
+      }
+      
+      .buttons {
+        display: flex;
+        gap: 100px;
+      }
+      #follow,
+      #message {
+        background-color: blue;
+        color: white;
+        box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.3);
+        border: lightblue;
+        width: 150px;
+        height: 40px;
+        border-radius: 50px;
+      }
+      #message {
+        background-color: orangered;
+        color: white;
+        border: 2px solid orangered;
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="body">
+    <div class="image">
+      <img
+        src="./IMG_20221231_191415.jpg"
+        alt="Profile Picture"
+        width="200px"
+        height="200px"
+      />
+    </div>
+    <div class="container">
+      <div class="card">
+        <div class="info">
+          <h1 style="color: violet; margin-bottom: 4px">Harshavardhan</h1>
+          <p>Front-end Developer from <strong>India</strong></p>
+          <p><img src="./geo-alt.svg" alt="location" /> Chennai, India</p>
+        </div>
+        <div class="stats">
+          <ul>
+            <li>
+              1598 <br />
+              Followers
+            </li>
+            <li>
+              65 <br />
+              Following
+            </li>
+            <li>
+              123 <br />
+              Articles
+            </li>
+            <li>
+              85 <br />
+              Works
+            </li>
+          </ul>
+        </div>
+        <div class="social">
+          <ul>
+            <li>
+              <img src="./facebook.svg" alt="facebook" width="40px" />
+            </li>
+            <li>
+              <img src="./twitter.svg" alt="twitter" width="40px" />
+            </li>
+            <li>
+              <img src="./instagram.svg" alt="instagram" width="40px" />
+            </li>
+            <li>
+              <img src="./meta.svg" alt="meta" width="40px" />
+            </li>
+            <li>
+              <img src="./git.svg" alt="git" width="40px" />
+            </li>
+            <li>
+              <img src="./whatsapp.svg" alt="whatsapp" width="40px" />
+            </li>
+            <li>
+              <img src="./threads.svg" alt="threads" width="40px" />
+            </li>
+          </ul>
+        </div>
+        <div class="buttons">
+          <button id="follow">Follow</button>
+          <button id="message">Message</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="body2">
+    <div class="image">
+      <img
+      src="./raji.jpg"
+        alt="Profile Picture"
+        width="200px"
+        height="200px"
+      />
+    </div>
+    <div class="container">
+      <div class="card">
+        <div class="info">
+          <h1 style="color: violet; margin-bottom: 4px">Rajavardhan</h1>
+          <p>Front-end Developer from <strong>India</strong></p>
+          <p><img src="./geo-alt.svg" alt="location" /> Chennai, India</p>
+        </div>
+        <div class="stats">
+          <ul>
+            <li>
+              1598 <br />
+              Followers
+            </li>
+            <li>
+              65 <br />
+              Following
+            </li>
+            <li>
+              123 <br />
+              Articles
+            </li>
+            <li>
+              85 <br />
+              Works
+            </li>
+          </ul>
+        </div>
+        <div class="social">
+          <ul>
+            <li>
+              <img src="./facebook.svg" alt="facebook" width="40px" />
+            </li>
+            <li>
+              <img src="./twitter.svg" alt="twitter" width="40px" />
+            </li>
+            <li>
+              <img src="./instagram.svg" alt="instagram" width="40px" />
+            </li>
+            <li>
+              <img src="./meta.svg" alt="meta" width="40px" />
+            </li>
+            <li>
+              <img src="./git.svg" alt="git" width="40px" />
+            </li>
+            <li>
+              <img src="./whatsapp.svg" alt="whatsapp" width="40px" />
+            </li>
+            <li>
+              <img src="./threads.svg" alt="threads" width="40px" />
+            </li>
+          </ul>
+        </div>
+        <div class="buttons">
+          <button id="follow">Follow</button>
+          <button id="message">Message</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="body3">
+
+  <div class="image">
+    <img
+      src="./sathya.png"
+      alt="Profile Picture"
+      width="200px"
+      height="200px"
+    />
+  </div>
+  <div class="container">
+    <div class="card">
+      <div class="info">
+        <h1 style="color: violet; margin-bottom: 4px">Sathya</h1>
+        <p>Front-end Developer from <strong>India</strong></p>
+        <p><img src="./geo-alt.svg" alt="location" /> Chennai, India</p>
+      </div>
+      <div class="stats">
+        <ul>
+          <li>
+            1598 <br />
+            Followers
+          </li>
+          <li>
+            65 <br />
+            Following
+          </li>
+          <li>
+            123 <br />
+            Articles
+          </li>
+          <li>
+            85 <br />
+            Works
+          </li>
+        </ul>
+      </div>
+      <div class="social">
+        <ul>
+          <li>
+            <img src="./facebook.svg" alt="facebook" width="40px" />
+          </li>
+          <li>
+            <img src="./twitter.svg" alt="twitter" width="40px" />
+          </li>
+          <li>
+            <img src="./instagram.svg" alt="instagram" width="40px" />
+          </li>
+          <li>
+            <img src="./meta.svg" alt="meta" width="40px" />
+          </li>
+          <li>
+            <img src="./git.svg" alt="git" width="40px" />
+          </li>
+          <li>
+            <img src="./whatsapp.svg" alt="whatsapp" width="40px" />
+          </li>
+          <li>
+            <img src="./threads.svg" alt="threads" width="40px" />
+          </li>
+        </ul>
+      </div>
+      <div class="buttons">
+        <button id="follow">Follow</button>
+        <button id="message">Message</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="body4">
+  <div class="image">
+    <img
+    src="./mahesh.jpg"
+      alt="Profile Picture"
+      width="200px"
+      height="200px"
+    />
+  </div>
+  <div class="container">
+    <div class="card">
+      <div class="info">
+        <h1 style="color: violet; margin-bottom: 4px">Arul Pasvan</h1>
+        <p>Front-end Developer from <strong>India</strong></p>
+        <p><img src="./geo-alt.svg" alt="location" /> Chennai, India</p>
+      </div>
+      <div class="stats">
+        <ul>
+          <li>
+            1598 <br />
+            Followers
+          </li>
+          <li>
+            65 <br />
+            Following
+          </li>
+          <li>
+            123 <br />
+            Articles
+          </li>
+          <li>
+            85 <br />
+            Works
+          </li>
+        </ul>
+      </div>
+      <div class="social">
+        <ul>
+          <li>
+            <img src="./facebook.svg" alt="facebook" width="40px" />
+          </li>
+          <li>
+            <img src="./twitter.svg" alt="twitter" width="40px" />
+          </li>
+          <li>
+            <img src="./instagram.svg" alt="instagram" width="40px" />
+          </li>
+          <li>
+            <img src="./meta.svg" alt="meta" width="40px" />
+          </li>
+          <li>
+            <img src="./git.svg" alt="git" width="40px" />
+          </li>
+          <li>
+            <img src="./whatsapp.svg" alt="whatsapp" width="40px" />
+          </li>
+          <li>
+            <img src="./threads.svg" alt="threads" width="40px" />
+          </li>
+        </ul>
+      </div>
+      <div class="buttons">
+        <button id="follow">Follow</button>
+        <button id="message">Message</button>
+      </div>
+    </div>
+  </div>
+</div>
+  </body>
+  
+</html>
